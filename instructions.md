@@ -4,6 +4,8 @@ This should work with OSX and Windows on VMWare Fuison and WMWare Workstation.
 
 This guide has been tested with WMWare Fusion 8 on OS X 10.11.5 and macOS Sierra 10.12 Public Beta 1 as guest OS.
 
+update: tested with VMWare Player 14 on Windows 10 and macOS High Sierra 10.13.1 as guest OS. 
+
 ## Overview
 
 1. Requirements
@@ -25,7 +27,7 @@ Also you will need [Clover Configurator](http://mackie100projects.altervista.org
 
 VMWare does not generate a serial-number and MLB/ROM values which are sopisticated enough. Your _About this Mac_ will look something like this. Notice the _VM_ at the start of the serial-number ? We will fix that and more with this guide.
 
-![_About this Mac_](https://raw.githubusercontent.com/toshmatik/VMWare-iMessage/master/Pictures/problem.png)
+![_About this Mac_](./Pictures/problem.png)
 
 ## 3. Generating values
 
@@ -35,15 +37,15 @@ Open Clover Configurator and dismiss any Pop-Up telling you about a missing EFI 
 
 Then navigate to the SMBIOS section and click on the "Magic Wand"
 
-![_SMBIOS_](https://raw.githubusercontent.com/toshmatik/VMWare-iMessage/master/Pictures/clover-1.png)
+![_SMBIOS_](./Pictures/clover-vibrant-1.png)
 
 You then should be presented with this. Choose the new Mac Pro model and hit OK.
 
-![_Mac Model_](https://raw.githubusercontent.com/toshmatik/VMWare-iMessage/master/Pictures/clover-2.png)
+![_Mac Model_](./Pictures/clover-vibrant-2.png)
 
 Choose _Mac Pro 6,1_ in the drop-down list (1). And randomize your serial-number (2). Then write down the information (3).
 
-![_Information_](https://raw.githubusercontent.com/toshmatik/VMWare-iMessage/master/Pictures/clover-3.png)
+![_Information_](./Pictures/clover-3.png)
 
 Save the config.plist, shut down your OS X VM and search for the .vmx file in at the VM location. Open it with your favourite text editor and search for following and change it to "FALSE".
 
