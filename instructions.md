@@ -75,7 +75,7 @@ We also need to change the MAC address of our VM. For this remove the following 
 
 Then add this and change the DDD with a MAC (Unix) adress from [here](http://hwaddress.com/company/apple-inc).
 
-NOTE: replace "-" in MAC address into ":", so DDD may look like "00-03-93-aa-bb-cc".  
+NOTE: replace "-" in MAC address into ":", so DDD may look like "00:03:93:aa:bb:cc".  
 
     ethernet0.addressType = "static"
     ethernet0.Address = "DDD"
