@@ -35,7 +35,7 @@ VMWare does not generate a serial-number and MLB/ROM values which are sopisticat
 
 Open Clover Configurator and dismiss any Pop-Up telling you about a missing EFI partiton or config.plist, we don't need it.
 
-Then navigate to the SMBIOS section and click on the "Magic Wand"
+Then navigate to the SMBIOS section and click on the marked icon.  ~~"Magic Wand"~~
 
 ![_SMBIOS_](./Pictures/clover-vibrant-1.PNG)
 
