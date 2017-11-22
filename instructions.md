@@ -37,15 +37,15 @@ Open Clover Configurator and dismiss any Pop-Up telling you about a missing EFI 
 
 Then navigate to the SMBIOS section and click on the "Magic Wand"
 
-![_SMBIOS_](./Pictures/clover-vibrant-1.png)
+![_SMBIOS_](./Pictures/clover-vibrant-1.PNG)
 
 You then should be presented with this. Choose the new Mac Pro model and hit OK.
 
-![_Mac Model_](./Pictures/clover-vibrant-2.png)
+![_Mac Model_](./Pictures/clover-vibrant-2.PNG)
 
 Choose _Mac Pro 6,1_ in the drop-down list (1). And randomize your serial-number (2). Then write down the information (3).
 
-![_Information_](./Pictures/clover-3.png)
+![_Information_](./Pictures/clover-vibrant-3.PNG)
 
 Save the config.plist, shut down your OS X VM and search for the .vmx file in at the VM location. Open it with your favourite text editor and search for following and change it to "FALSE".
 
