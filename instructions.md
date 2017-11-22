@@ -95,7 +95,9 @@ Open the previosuly saved config.plist in Clover Configurator and navigate to th
 
 Go to the Rt Variables section and copy the last 12 (Hex) values from the uuidgen output to the ROM field (1). Save and hit calculate (2). Note the MLB and the ROM (from before) for further use (3).
 
-![_MLB + ROM_](https://raw.githubusercontent.com/toshmatik/VMWare-iMessage/master/Pictures/mlb.png)
+![_MLB + ROM_](./Pictures/clover-vibrant-mlb-1.PNG)
+
+![_MLB + ROM_](./Pictures/clover-vibrant-mlb-2.PNG)
 
 Shutdown the VM and open the .vmx file again.
 
@@ -106,7 +108,7 @@ Add following to the .vmx file.
     efi.nvram.var.ROM = "EEE"
     efi.nvram.var.MLB = "FFF"
 
-Replace EEE with the ROM value and FFF with the MLB value, save and start your VM again.
+Replace EEE("xxxxxxxxxxxx") with the ROM value and FFF("F5Kxxxxxxxxxxxxxx") with the MLB value, save and start your VM again.
 
 ## 4. GO!
 
