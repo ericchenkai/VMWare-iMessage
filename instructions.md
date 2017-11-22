@@ -49,7 +49,8 @@ Choose _Mac Pro 6,1_ in the drop-down list (1). And randomize your serial-number
 
 Save the config.plist, shut down your OS X VM and search for the .vmx file in at the VM location. Open it with your favourite text editor and search for following and change it to "FALSE".
 
-    board-id.reflectHost = "TRUE"
+    # board-id.reflectHost = "TRUE"
+    board-id.reflectHost = "FALSE"
 
 And add flowing lines to the .vmx file
 
@@ -60,7 +61,7 @@ And add flowing lines to the .vmx file
     serialNumber = "CCC"
     smbios.reflectHost = "FALSE"
 
-Replace AAA with the board-id, BBB with the hardware model and CCC with the serial-number previously generated.
+Replace AAA ("Mac-xxxxxxxxxxxxxxxx") with the board-id, BBB("MacPro6,1") with the hardware model and CCC("F5Kxxxxxxxxxxxxxx") with the serial-number previously generated.
 
 Keep it open for the next step
 
@@ -68,11 +69,13 @@ Keep it open for the next step
 
 We also need to change the MAC address of our VM. For this remove the following from your .vmx.
 
-    ethernet0.addressType = "generated"
-    ethernet0.generatedAddress = "xx:xx:xx:xx:xx:xx"
-    ethernet0.generatedAddressOffset = "0"
+    # ethernet0.addressType = "generated"
+    # ethernet0.generatedAddress = "xx:xx:xx:xx:xx:xx"
+    # ethernet0.generatedAddressOffset = "0"
 
 Then add this and change the DDD with a MAC (Unix) adress from [here](http://hwaddress.com/company/apple-inc).
+
+NOTE: replace "-" in MAC address into ":", so DDD may look like "00-03-93-aa-bb-cc".  
 
     ethernet0.addressType = "static"
     ethernet0.Address = "DDD"
