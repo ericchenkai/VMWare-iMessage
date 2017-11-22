@@ -118,5 +118,11 @@ BUT i can't guarantee that this will work forever! Apple changes the requirement
 
 ## To Be Continued  
 
-I was still failed with an error required to contact mac support. I will give up by now. maybe back later on. 
+I was still failed with an error required to contact mac support.  
+
+This guideline suggests a valid UUID is important. It takes many times try to find out a useful UUID.  
+
+https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/
+
+I give up by now. maybe back later on, some day.
 
