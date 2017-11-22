@@ -115,3 +115,8 @@ Replace EEE("xxxxxxxxxxxx") with the ROM value and FFF("F5Kxxxxxxxxxxxxxx") with
 Login with your AppleID in iMessage. You should be good to go.
 
 BUT i can't guarantee that this will work forever! Apple changes the requirements every so often, rendering some actions usless to the point it simply doesn't work.
+
+## To Be Continued  
+
+I was still failed with an error required to contact mac support. I will give up by now. maybe back later on. 
+
